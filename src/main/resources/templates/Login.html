@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<style>
+input[type=text], select {
+  width: 30%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 30%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+div {
+  width: 400px;
+    padding: 2rem 1rem;
+    margin: 30px auto;
+    background: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    border-shadow: 0 20px 35px rgba(0, 0,0, 0.1);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+
+h3{
+text-align: center;
+color: white;
+background: dodgerblue;
+Height: 30px;
+width:100%;
+padding: 10px;
+border-radius: 4px;
+
+}
+
+.sig a{
+text-align: center;
+color: black;
+background-color: blue;
+}
+
+.sig a:hover{
+color: dodgerblue;
+}
+</style>
+<body>
+
+<h3>Login Here</h3>
+<div>
+  <form action="Log">
+   
+    <label for="names">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter email..">
+<br>
+<br>
+  <label for="password"> Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter password">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div sig>
+<a th:href = "@{/sigup}"> SignUp</a>
+</div>
+</body>
+</html>
+
+
+</body>
+</html>
